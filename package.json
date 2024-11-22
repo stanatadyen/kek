@@ -1,0 +1,27 @@
+{
+  "name": "empty-vue",
+  "version": "0.0.4",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack-cli serve",
+    "serve": "serve dist -p 3001",
+    "build": "npm run clean && webpack --mode production",
+    "clean": "rm -rf dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@module-federation/enhanced": "0.6.3",
+    "vue": "^2.7.16",
+    "vue-loader": "^15.11.1"
+  },
+  "devDependencies": {
+    "css-loader": "^6.11.0",
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.94.0",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  }
+}
