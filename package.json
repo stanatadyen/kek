@@ -1,6 +1,6 @@
 {
   "name": "empty-vue",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-cli serve",
