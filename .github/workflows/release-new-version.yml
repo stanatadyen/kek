@@ -37,7 +37,7 @@ jobs:
       - name: Build for CDN and package it up
         run: |
           npm run build
-          tar -czvf mfe-dummy-${{ env.NEW_VERSION }}_cdn.tgz -C ./dist .
+          tar -czvf kek-${{ env.NEW_VERSION }}_cdn.tgz -C ./dist .
 
       - name: Push tags and create a release
         env:
