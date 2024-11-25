@@ -47,4 +47,4 @@ jobs:
           git commit -m "${{ env.NEW_VERSION}}"
           git tag ${{ env.NEW_VERSION }}
           git push --tags
-          gh release create ${{ env.NEW_VERSION }} mfe-dummy-${{ env.NEW_VERSION }}_cdn.tgz --title ${{ env.NEW_VERSION }}
+          gh release create ${{ env.NEW_VERSION }} kek-${{ env.NEW_VERSION }}_cdn.tgz --title ${{ env.NEW_VERSION }}
