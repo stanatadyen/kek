@@ -37,7 +37,7 @@ jobs:
       - name: Build for CDN and package it up
         run: |
           npm run build
-          tar -czvf kek-${{ env.NEW_VERSION }}_cdn.tgz -C ./dist .
+          tar -czvf pek-${{ env.NEW_VERSION }}_cdn.tgz -C ./dist .
 
       - name: Push tags and create a release
         env:
@@ -47,4 +47,4 @@ jobs:
           git commit -m "${{ env.NEW_VERSION}}"
           git tag ${{ env.NEW_VERSION }}
           git push --tags
-          gh release create ${{ env.NEW_VERSION }} kek-${{ env.NEW_VERSION }}_cdn.tgz --title ${{ env.NEW_VERSION }}
+          gh release create ${{ env.NEW_VERSION }} pek-${{ env.NEW_VERSION }}_cdn.tgz --title ${{ env.NEW_VERSION }}
